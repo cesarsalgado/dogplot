@@ -9,3 +9,7 @@ def plot_hist(array, bins=None):
   center = (bins[:-1] + bins[1:]) / 2 
   plt.bar(center, hist, align='center', width=width) 
   plt.show()
+
+def plot2d_points(X):
+  plt.scatter(X[:,0],X[:,1])
+  plt.show()
