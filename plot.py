@@ -13,3 +13,6 @@ def plot_hist_and_show(array, bins=None):
 def plot2d_points_and_show(X):
   plt.scatter(X[:,0],X[:,1])
   plt.show()
+
+def plot_line(p1, p2, lw=2):
+  plt.plot([p1[0],p2[0]], [p1[1],p2[1]], 'k-', lw=lw)
