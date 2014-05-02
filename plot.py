@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt 
 
-def plot_hist(array, bins=None):
+def plot_hist_and_show(array, bins=None):
   if not bins:
     bins = array.max()
   hist, bins = np.histogram(array, bins=bins)
@@ -10,6 +10,6 @@ def plot_hist(array, bins=None):
   plt.bar(center, hist, align='center', width=width) 
   plt.show()
 
-def plot2d_points(X):
+def plot2d_points_and_show(X):
   plt.scatter(X[:,0],X[:,1])
   plt.show()
