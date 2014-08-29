@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def plot_hist_and_show(array, bins=None):
   if not bins:
-    bins = array.max()
+    bins = array.max()-array.min()+1
   hist, bins = np.histogram(array, bins=bins)
   width = 0.7 * (bins[1] - bins[0]) 
   center = (bins[:-1] + bins[1:]) / 2 
